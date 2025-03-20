@@ -1,16 +1,14 @@
 let lastScrollTop = 0;
-const header = document.querySelector("header");
+const header = document.getElementById("header");
 
-window.addEventListener("scroll", () => {
-    let scrollTop = window.scrollY;
-
-    if (scrollTop > lastScrollTop) {
-        // Rolando para baixo, esconde o cabeçalho
-        header.classList.add("header-hidden");
+window.addEventListener("scroll", function () {
+    let currentScroll = window.scrollY;
+    if (currentScroll > lastScrollTop) {
+        // Rola para baixo -> Esconde o header
+        header.style.transform = "translateY(-100%)";
     } else {
-        // Rolando para cima, mostra o cabeçalho
-        header.classList.remove("header-hidden");
+        // Rola para cima -> Mostra o header
+        header.style.transform = "translateY(0)";
     }
-
-    lastScrollTop = scrollTop;
+    lastScrollTop = currentScroll;
 });
