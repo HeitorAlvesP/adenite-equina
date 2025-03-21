@@ -11,7 +11,7 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// botão do rodapé
+// botão do contato
 function toggleContato() {
     const modal = document.getElementById("contatoModal");
     modal.style.display = modal.style.display === "flex" ? "none" : "flex";
