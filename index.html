@@ -56,37 +56,6 @@
             <p id="modalTexto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nam voluptatibus hic, obcaecati esse asperiores, aliquid explicabo labore voluptate tempora eos voluptatem assumenda fugiat recusandae, doloremque beatae corporis eum sapiente?</p>
         </div>
     </div>
-
-
-    <script>
-        //botão do menu
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        }
-
-        document.addEventListener("click", function(event) {
-            const menu = document.getElementById("menu");
-            const button = document.querySelector(".menu-btn");
-
-            if (!menu.contains(event.target) && !button.contains(event.target)) {
-                menu.style.display = "none";
-            }
-        });
-        
-        // botão do rodapé
-        function toggleContato() {
-            const modal = document.getElementById("contatoModal");
-            modal.style.display = modal.style.display === "flex" ? "none" : "flex";
-        }
-        
-        // Fechar o modal se clicar fora da área de conteúdo
-        window.onclick = function(event) {
-            const modal = document.getElementById("contatoModal");
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,14 +1,25 @@
-let lastScrollTop = 0;
-const header = document.getElementById("header");
-
-window.addEventListener("scroll", function () {
-    let currentScroll = window.scrollY;
-    if (currentScroll > lastScrollTop) {
-        // Rola para baixo -> Esconde o header
-        header.style.transform = "translateY(-100%)";
-    } else {
-        // Rola para cima -> Mostra o header
-        header.style.transform = "translateY(0)";
+//botão do menu
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+document.addEventListener("click", function(event) {
+    const menu = document.getElementById("menu");
+    const button = document.querySelector(".menu-btn");
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
     }
-    lastScrollTop = currentScroll;
 });
+
+// botão do rodapé
+function toggleContato() {
+    const modal = document.getElementById("contatoModal");
+    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("contatoModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
