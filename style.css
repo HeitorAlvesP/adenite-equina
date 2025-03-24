@@ -11,10 +11,11 @@ body {
 }
 
 header {
-    padding: 10px 15px 10px 15px;
+    padding: 3px 5px 80px 80px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    /* margin-bottom: -10px; */
+    /* position: fixed; */
     top: 0;
     left: 0;
     background-image: url(cabecalho.png) !important;
