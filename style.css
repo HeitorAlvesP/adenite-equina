@@ -12,13 +12,13 @@ body {
 
 header {
     padding: 3px 5px 80px 80px;
+    position: fixed;
     text-align: center;
     width: 100%;
-    /* margin-bottom: -10px; */
-    /* position: fixed; */
+    margin-bottom: -10px;
     top: 0;
     left: 0;
-    background-image: url(cabecalho.png) !important;
+    background-image: url('img/cabecalho.png') !important;
     transition: transform 0.4s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -28,6 +28,9 @@ header {
     transform: translateY(-100%); 
 } */
 
+.text-header h1{
+    text-align: center;
+}
 
 .menu-btn {
     position: fixed;
