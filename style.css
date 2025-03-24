@@ -24,9 +24,6 @@ header {
     z-index: 1000;
 }
 
-/* .header-hidden {
-    transform: translateY(-100%); 
-} */
 
 .text-header h1{
     text-align: center;
