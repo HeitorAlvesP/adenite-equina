@@ -79,10 +79,10 @@ function atualizarBotoes() {
     let botoes = document.querySelectorAll(".audio-btn");
     botoes.forEach(botao => {
         if (lendo && botao.getAttribute("onclick").includes(secaoAtual)) {
-            botao.innerHTML = "⏹️ Parar";
+            botao.innerHTML = "◼";
             botao.classList.add("parando");
         } else {
-            botao.innerHTML = "🔊 Ouvir Texto";
+            botao.innerHTML = "♫";
             botao.classList.remove("parando");
         }
     });

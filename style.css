@@ -234,10 +234,10 @@ header h1 {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 .audio-btn.parando {
-    background: linear-gradient(135deg, #8B0000, #B22222);
+    background: linear-gradient(135deg, #3A3A50, #4E4E68);
 }
 .audio-btn.parando:hover {
-    background: linear-gradient(135deg, #B22222, #D32F2F);
+    background: linear-gradient(135deg, #3A3A50, #4E4E68);
 }
 /*FIM DO AUDIO*/
 
