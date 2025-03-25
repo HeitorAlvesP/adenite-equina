@@ -28,16 +28,21 @@ header {
     padding-bottom: 250px;
 }
 
-
-.text-header h1{
+header h1{
     text-align: center;
+    text-decoration: dashed;
 }
+
+
+/* .text-header h1{
+    text-align: center;
+} */
 
 .menu-btn {
     position: fixed;
     top: 15px;
     left: 15px;
-    background: #2c7a4b;
+    background: #1D1D27;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -48,14 +53,14 @@ header {
 }
 
 .menu-btn:hover {
-    background: #24623b;
+    background: #1D1D27;
 }
 
 .menu-btn {
     position: fixed;
     top: 15px;
     left: 15px;
-    background: linear-gradient(135deg, #2c7a4b, #3f8b5f);
+    background: linear-gradient(135deg, #1D1D27, #1D1D27);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -71,7 +76,7 @@ header {
 }
 
 .menu-btn:hover {
-    background: linear-gradient(135deg, #24623b, #357a57);
+    background: linear-gradient(135deg, #1D1D27, #1D1D27);
     transform: scale(1.05);
 }
 
@@ -94,7 +99,7 @@ header {
 
 .menu a {
     text-decoration: none;
-    color: #2c7a4b;
+    color: #1D1D27;
     padding: 10px;
     display: block;
     transition: background 0.3s, transform 0.2s;
@@ -104,7 +109,7 @@ header {
 }
 
 .menu a:hover {
-    background: #d4edda;
+    background: #9c9cb6;
     transform: translateX(5px);
 }
 
@@ -150,7 +155,7 @@ section {
 
 h2 {
     font-size: 24px;
-    color: #2c7a4b;
+    color: #1D1D27;
     margin-bottom: 15px;
 }
 
@@ -176,7 +181,7 @@ li {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background: linear-gradient(135deg, #2c7a4b, #3f8b5f);
+    background: linear-gradient(135deg, #1D1D27, #515161);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -192,7 +197,7 @@ li {
 }
 
 .contato-btn:hover {
-    background: linear-gradient(135deg, #24623b, #357a57);
+    background: linear-gradient(135deg, #1D1D27, #1D1D27);
     transform: scale(1.05);
 }
 
@@ -205,7 +210,7 @@ li {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background: linear-gradient(135deg, #2c7a4b, #3f8b5f);
+    background: linear-gradient(135deg, #1D1D27, #1D1D27);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -221,7 +226,7 @@ li {
 }
 
 .contato-btn:hover {
-    background: linear-gradient(135deg, #24623b, #357a57);
+    background: linear-gradient(135deg, #1D1D27, #1D1D27);
     transform: scale(1.05);
 }
 
