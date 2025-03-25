@@ -221,6 +221,7 @@ header h1 {
     letter-spacing: 1px;
 }
 
+
 /* Efeito ao passar o mouse */
 .audio-btn:hover {
     background: linear-gradient(135deg, #3A3A50, #4E4E68);
