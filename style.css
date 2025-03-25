@@ -11,32 +11,61 @@ body {
 }
 
 header {
-    /* padding: 3px 5px 80px 80px; */
-    /* position: fixed; */
     text-align: center;
     width: 100%;
     margin-bottom: -10px;
     top: 0;
     left: 0;
     background-image: url('img/cavalinho.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     transition: transform 0.4s ease-in-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     -webkit-background-size: cover;
-    background-size: cover;
     padding-top: 60px;
-    padding-bottom: 250px;
+    padding-bottom: 280px;
 }
 
-header h1{
+header h1 {
     text-align: center;
-    text-decoration: dashed;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.brand {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeSlideIn 1s ease-out forwards;
 }
 
 
-/* .text-header h1{
-    text-align: center;
-} */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 .menu-btn {
     position: fixed;
