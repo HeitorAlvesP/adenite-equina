@@ -25,8 +25,10 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     -webkit-background-size: cover;
+    position: relative;
+    justify-content: flex-end;
     padding-top: 60px;
-    padding-bottom: 280px;
+    padding-bottom: 180px;
 }
 
 header h1 {
@@ -39,6 +41,7 @@ header h1 {
     margin: 0;
     opacity: 0;
     transform: translateY(-15px);
+    /* margin-bottom: 40px; */
     animation: fadeSlideIn 1s ease-out forwards;
 }
 
@@ -66,6 +69,54 @@ header h1 {
 }
 
 
+/* Estilos para os botões */
+.buttons {
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    position: absolute;
+    bottom: 10px; /* Coloca os botões na parte inferior do header */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza os botões horizontalmente */
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff; /* Cor do texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 30px; /* Bordas arredondadas */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: fadeSlideIn 1s ease-out forwards 0.5s; /* Animação com delay para os botões */
+}
+
+.button:hover {
+    background-color: #1D1D27; /* Cor mais escura no hover */
+}
+
+/* Animação para os botões */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*FIM DO BOTÃO*/
 
 .menu-btn {
     position: fixed;
