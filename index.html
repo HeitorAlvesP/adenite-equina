@@ -13,7 +13,9 @@
     </header>
     
     <nav>
-        <ul>
+
+        <!-- Menu para desktop (visível em telas maiores) -->
+        <ul class="desktop-menu">
             <li><a href="#sobre">Sobre a Doença</a></li>
             <li><a href="#diagnostico">Diagnóstico</a></li>
             <li><a href="#tratamento">Tratamento</a></li>
@@ -21,6 +23,18 @@
             <li><a href="#medicamentos">Medicamentos</a></li>
             <li><a href="#imagens">Imagens</a></li>
         </ul>
+
+        <!-- Botão e menu para mobile (oculto em telas maiores) -->
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="#sobre">Sobre a Doença</a></li>
+            <li><a href="#diagnostico">Diagnóstico</a></li>
+            <li><a href="#tratamento">Tratamento</a></li>
+            <li><a href="#transmissao">Transmissão</a></li>
+            <li><a href="#medicamentos">Medicamentos</a></li>
+            <li><a href="#imagens">Imagens</a></li>
+        </ul>
+
     </nav>
     
     <div class="container">
@@ -235,20 +249,26 @@
             </div>
         </section>
 
+        <button class="contato-btn" onclick="toggleContato()">
+            <img src="img/emoji-removebg-preview.png" alt="Ícone de contato" class="contato-icon">
+        </button>
+
         <div id="contatoModal" class="contato-modal">
             <div class="contato-modal-content">
                 <span class="contato-modal-close" onclick="toggleContato()">&times;</span>
-                <p id="modalTexto">Aqui está o texto que você deseja exibir no modal.</p>
-                <p id="modalTexto">O Garrotinho é uma condição que afeta os equinos, causando inflamação e lesões na região do garrote, geralmente associada ao uso inadequado de selas ou traumas  repetitivos.</p>
-                <p id="modalTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis inventore numquam cum soluta quis iusto esse. Ratione molestiae inventore reiciendis    aspernatur totam modi natus error labore, aperiam sunt hic?</p>
-                <p id="modalTexto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nam voluptatibus hic, obcaecati esse asperiores, aliquid explicabo labore voluptate tempora eos     voluptatem assumenda fugiat recusandae, doloremque beatae corporis eum sapiente?</p>
+                <h2>Sobre o Garrotilho</h2>
+                <div class="modal-text-content">
+                    <p>O Garrotilho é uma condição que afeta os equinos, causando inflamação e lesões na região do garrote, geralmente associada ao uso inadequado de selas ou traumas repetitivos.</p>
+                    <p>É uma doença infecciosa altamente contagiosa que acomete o trato respiratório superior de equinos, causada pela bactéria Streptococcus equi.</p>
+                    <p>Os sintomas incluem formação de abscessos nos linfonodos, febre e dificuldade respiratória. O tratamento deve ser orientado por um médico veterinário.</p>
+                </div>
             </div>
         </div>
 
     </div>
     
     <footer>
-        <p>© 2023 Site Informativo sobre Garrotilho em Equinos</p>
+        <p>© 2025 Site Informativo sobre Garrotilho em Equinos</p>
         <p>Desenvolvido para fins educacionais - Consulte sempre um médico veterinário</p>
     </footer>
 

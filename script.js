@@ -50,14 +50,54 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+
+////modal contato
 function toggleContato() {
     const modal = document.getElementById("contatoModal");
-    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+    if (modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Permite scroll novamente
+    } else {
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden"; // Impede scroll quando modal aberto
+    }
 }
 
 window.onclick = function(event) {
     const modal = document.getElementById("contatoModal");
     if (event.target === modal) {
-        modal.style.display = "none";
+        toggleContato();
     }
 }
+
+// Fechar modal com tecla ESC
+document.addEventListener('keydown', function(event) {
+    const modal = document.getElementById("contatoModal");
+    if (event.key === "Escape" && modal.style.display === "flex") {
+        toggleContato();
+    }
+});
+
+
+///////menu xbcon/////
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("active");
+}
+
+// Fechar o menu ao clicar fora
+document.addEventListener("click", function(event) {
+    const menu = document.getElementById("mobile-menu");
+    const button = document.querySelector(".menu-btn");
+    
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.classList.remove("active");
+    }
+});
+
+// Fechar o menu ao clicar em um link
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.remove('active');
+    });
+});
