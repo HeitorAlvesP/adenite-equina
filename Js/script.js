@@ -11,8 +11,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-
-
 // botão do contato
 function toggleContato() {
     const modal = document.getElementById("contatoModal");
@@ -87,56 +85,3 @@ function atualizarBotoes() {
         }
     });
 }
-
-
-
-
-
-
-// let sintese;
-// let lendo = false;
-// function toggleLeitura() {
-//     if (!lendo) {
-//         iniciarLeitura();
-//     } else {
-//         pararLeitura();
-//     }
-// }
-// function iniciarLeitura() {
-//     let paragrafos = document.querySelectorAll("p");
-//     let texto = "";
-//     paragrafos.forEach(p => texto += p.innerText + " ");
-
-//     if ('speechSynthesis' in window) {
-//         sintese = new SpeechSynthesisUtterance(texto);
-//         sintese.lang = 'pt-BR';
-//         sintese.rate = 1;
-//         sintese.pitch = 1;
-
-//         let vozes = speechSynthesis.getVoices();
-//         sintese.voice = vozes.find(voz => voz.lang === 'pt-BR') || null;
-
-//         speechSynthesis.speak(sintese);
-//         lendo = true;
-//         atualizarBotao();
-//     } else {
-//         alert("Seu navegador não suporta leitura em voz alta.");
-//     }
-// }
-// function pararLeitura() {
-//     if ('speechSynthesis' in window) {
-//         speechSynthesis.cancel();
-//         lendo = false;
-//         atualizarBotao();
-//     }
-// }
-// function atualizarBotao() {
-//     let botao = document.getElementById("audio-btn");
-//     if (lendo) {
-//         botao.innerHTML = "⏹️ Parar";
-//         botao.classList.add("parando");
-//     } else {
-//         botao.innerHTML = "🔊 Ouvir Texto";
-//         botao.classList.remove("parando");
-//     }
-// }
