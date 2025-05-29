@@ -45,6 +45,10 @@ header h1 {
     animation: fadeSlideIn 1s ease-out forwards;
 }
 
+.centraliza-essa-porra{
+    text-align: center;
+}
+
 .brand {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 40px;
