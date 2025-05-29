@@ -1,331 +1,453 @@
-        :root {
-            --primary-color: #4a6b3b;
-            --secondary-color: #8ba888;
-            --accent-color: #d4a762;
-            --light-color: #f5f5f5;
-            --dark-color: #333;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--light-color);
-            color: var(--dark-color);
-            line-height: 1.6;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('../img/cavalo_p2.jpg') center/cover;
-            /* background: url('https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; */
-            opacity: 0.6;
-            z-index: 0;
-        }
-        
-        header h1, header p {
-            position: relative;
-            z-index: 1;
-        }
-        
-        nav {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: var(--primary-color);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        section {
-            margin-bottom: 3rem;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            color: white;
-            margin-bottom: 1rem;
-        } 
-        
-        h2, h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-        }
-        
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        
-        .image-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .image-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .image-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .image-card p {
-            padding: 1rem;
-            background-color: white;
-            font-size: 0.9rem;
-            color: var(--dark-color);
-        }
-        
-        .highlight {
-            background-color: rgba(212, 167, 98, 0.2);
-            padding: 1rem;
-            border-left: 4px solid var(--accent-color);
-            margin: 1rem 0;
-        }
-        
-        .treatment-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-        
-        .treatment-table th, .treatment-table td {
-            border: 1px solid #ddd;
-            padding: 0.8rem;
-            text-align: left;
-        }
-        
-        .treatment-table th {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-        
-        .treatment-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        
-        .medication-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        
-        .medication-name {
-            color: var(--primary-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .medication-use {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 0.5rem;
-        }
-        
-        .carousel {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        
-        .carousel-item {
-            min-width: 100%;
-        }
-        
-        .carousel-item img {
-            width: 100%;
-            display: block;
-        }
-        
-        .carousel-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            padding: 1rem;
-            cursor: pointer;
-            font-size: 1.5rem;
-            z-index: 10;
-        }
-        
-        .carousel-control.prev {
-            left: 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .carousel-control.next {
-            right: 0;
-            border-radius: 8px 0 0 8px;
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .accordion {
-            margin: 1rem 0;
-        }
-        
-        .accordion-item {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-            overflow: hidden;
-        }
-        
-        .accordion-header {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 1rem;
-            cursor: pointer;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .accordion-header:hover {
-            background-color: var(--primary-color);
-        }
-        
-        .accordion-content {
-            padding: 1rem;
-            background-color: white;
-            display: none;
-        }
-        
-        .accordion-item.active .accordion-content {
-            display: block;
-        }
-        
-        .accordion-icon {
-            transition: transform 0.3s;
-        }
-        
-        .accordion-item.active .accordion-icon {
-            transform: rotate(180deg);
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-                align-items: center;
-            }
-            
-            .image-gallery {
-                grid-template-columns: 1fr;
-            }
-        }
+:root {
+    --primary-color: #4a6b3b;
+    --secondary-color: #8ba888;
+    --accent-color: #d4a762;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./img/cavalo_p2.jpg') center/cover;
+    /* background: url('https://images.unsplash.com/photo-1500479694472-551d1fb6258d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; */
+    opacity: 0.6;
+    z-index: 0;
+}
+
+header h1, header p {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1rem;
+} 
+
+h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-card p {
+    padding: 1rem;
+    background-color: white;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.highlight {
+    background-color: rgba(212, 167, 98, 0.2);
+    padding: 1rem;
+    border-left: 4px solid var(--accent-color);
+    margin: 1rem 0;
+}
+
+.treatment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.treatment-table th, .treatment-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.treatment-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.treatment-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.medication-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.medication-name {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.medication-use {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.carousel-control.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.accordion {
+    margin: 1rem 0;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background-color: var(--primary-color);
+}
+
+.accordion-content {
+    padding: 1rem;
+    background-color: white;
+    display: none;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-icon {
+    transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.contato-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    padding: 18px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeSlideIn 1s ease-out forwards 0.8s;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contato-icon {
+    font-size: 90px;
+}
+
+.contato-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.contato-btn:hover {
+    background-color: #1D1D27;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contato-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.contato-modal-content {
+    background: white;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border: 2px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    animation: fadeSlideIn 0.8s ease-out forwards;
+    color: #000000;
+}
+
+.contato-modal-close {
+    font-size: 28px;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.contato-modal-close:hover {
+    color: rgb(180, 67, 67);
+}
+
+.contato-modal p {
+    font-size: 18px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.contato-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeSlideIn 0.8s ease-out forwards;
+    color: rgb(0, 0, 0);
+}
+
+.contato-box p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}

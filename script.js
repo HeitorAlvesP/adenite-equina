@@ -49,3 +49,15 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+function toggleContato() {
+    const modal = document.getElementById("contatoModal");
+    modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("contatoModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
