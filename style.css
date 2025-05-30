@@ -213,6 +213,78 @@ nav a:hover {
 }
 
 
+/* Estilos para a seção Sobre */
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.highlight {
+    background-color: rgba(139, 69, 19, 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.microorganism-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.microorganism-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.microorganism-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.microorganism-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.microorganism-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .microorganism-card {
+        flex-direction: column;
+    }
+    
+    .microorganism-image,
+    .microorganism-info {
+        min-width: 100%;
+    }
+}
+
 
 .image-gallery {
     display: grid;
