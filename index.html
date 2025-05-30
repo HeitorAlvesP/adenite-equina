@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garrotilho em Equinos - Adenite Equina</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -39,13 +40,27 @@
     
     <div class="container">
 
+        <section id="intro">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2>GARROTILHO OU ADENITE EQUINA</h2>
+                        <h3>Origem do Nome</h3>
+                        <p>A origem do termo "garrotilho" remonta ao espanhol <em>garrotillo</em>, utilizado para designar anginas graves que levavam à morte por sufocação. Essa denominação permanece pertinente, visto que animais acometidos, quando não tratados, exibem aspecto clínico semelhante à obstrução mecânica das vias respiratórias.</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
         <section id="sobre">
             <div class="container">
                 <h2 class="section-title">Sobre a Doença</h2>
 
                 <div class="sobre-content">
                     <div class="sobre-text">
-                        <p>O garrotilho, também denominado adenite equina ou linfoadenite equina, configura-se como uma enfermidade infecciosa e altamente contagiosa que acomete o trato respiratório superior de equinos.</p>
+                        <p>O garrotilho é uma doença contagiosa causada pela bactéria <em>Streptococcus equi</em> subespécie <em>equi</em>, que pode ser transmitida de forma direta, por meio do contato com um animal infectado, ou indireta, por meio do contato com objetos e ambientes contaminados. A doença afeta o trato respiratório anterior de equinos de todas as idades, sendo mais prevalente entre animais jovens (3 meses a 2 anos).</p>
+                        
+                        <p>É marcada por produção excessiva de muco e pus nas vias aéreas superiores, acompanhada de inflamação e infecção dos gânglios linfáticos localizados atrás da garganta e abaixo da mandíbula, levando à formação de abscessos.</p>
 
                         <div class="highlight">
                             <div class="microorganism-card">
@@ -61,10 +76,46 @@
                         </div>
 
                         <h3>Sinais Clínicos</h3>
+
+                        <ul class="clinical-signs">
+                            <li><i class="fas fa-temperature-high"></i> Febre alta (acima de 39,5°C)</li>
+                            <li><i class="fas fa-tired"></i> Letargia e perda de apetite</li>
+                            <li><i class="fas fa-tint"></i> Corrimento nasal mucopurulento</li>
+                            <li><i class="fas fa-lungs"></i> Tosse e dificuldade respiratória</li>
+                            <li><i class="fas fa-swelling"></i> Aumento doloroso de linfonodos submandibulares e retrofaríngeos</li>
+                            <li><i class="fas fa-utensils"></i> Disfagia (dificuldade para engolir)</li>
+                        </ul>
+
+                        <div class="alert-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>Em alguns animais, a ruptura dos abscessos pode levar à eliminação de grande volume de secreção purulenta, o que melhora os sintomas mas aumenta o risco de contaminação ambiental.</p>
+                        </div>
+
                         <p>A infecção caracteriza-se, principalmente, pela formação de abscessos nos linfonodos submandibulares e retrofaríngeos, que podem comprimir a faringe e causar dificuldade respiratória. A morbidade da enfermidade é elevada, com impacto considerável sobre o desempenho e crescimento dos animais, sobretudo dos mais jovens, sendo a letalidade geralmente baixa.</p>
 
-                        <h3>Origem do Nome</h3>
-                        <p>A origem do termo "garrotilho" remonta ao espanhol <em>garrotillo</em>, utilizado para designar anginas graves que levavam à morte por sufocação. Essa denominação permanece pertinente, visto que animais acometidos, quando não tratados, exibem aspecto clínico semelhante à obstrução mecânica das vias respiratórias.</p>
+                        <h3>Fatores Predisponentes</h3>
+                        <div class="factors-grid">
+                            <div class="factor-card">
+                                <i class="fas fa-stress"></i>
+                                <h4>Estresse</h4>
+                            </div>
+                            <div class="factor-card">
+                                <i class="fas fa-truck-moving"></i>
+                                <h4>Transporte prolongado</h4>
+                            </div>
+                            <div class="factor-card">
+                                <i class="fas fa-horse-head"></i>
+                                <h4>Superlotação</h4>
+                            </div>
+                            <div class="factor-card">
+                                <i class="fas fa-virus"></i>
+                                <h4>Infecções virais</h4>
+                            </div>
+                            <div class="factor-card">
+                                <i class="fas fa-bug"></i>
+                                <h4>Parasitoses</h4>
+                            </div>
+                        </div>
 
                         <div class="highlight">
                             <h3>Zoonose</h3>
@@ -74,7 +125,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="diagnostico">
             <div class="container">
                 <h2 class="section-title">Diagnóstico</h2>
@@ -130,25 +181,25 @@
 
                             <div class="diagnostico-method">
                                 <h4>Ultrassonografia (USG)</h4>
-                                <p><strong>Objetivo:</strong> Avaliar o tamanho, a forma e o conteúdo dos linfonodos.</p>
-                                <p><strong>O que mostra:</strong> Linfonodos aumentados, com conteúdo hipoecoico (indicando pus).</p>
+                                <p><strong>Objetivo:</strong> Avaliar tamanho, forma e conteúdo dos linfonodos (principalmente submandibulares e retrofaríngeos).</p>
+                                <p><strong>Resultados:</strong> Linfonodos aumentados com conteúdo hipoecoico (pus) ou estruturas heterogêneas.</p>
                             </div>
 
                             <div class="diagnostico-method">
                                 <h4>Endoscopia</h4>
-                                <p><strong>Objetivo:</strong> Visualizar diretamente a nasofaringe e os óstios das bolsas guturais.</p>
-                                <p><strong>O que mostra:</strong> Presença de secreção purulenta nas vias aéreas superiores.</p>
+                                <p><strong>Objetivo:</strong> Visualizar diretamente nasofaringe e óstios das bolsas guturais.</p>
+                                <p><strong>Importância:</strong> Diagnóstico da forma atípica com infecção nas bolsas guturais (empisema guttural).</p>
                             </div>
 
                             <div class="diagnostico-method">
                                 <h4>Radiografia</h4>
-                                <p><strong>Objetivo:</strong> Avaliar estruturas ósseas da cabeça e linfonodos profundos.</p>
-                                <p><strong>Limitação:</strong> Menos sensível para estruturas de partes moles.</p>
+                                <p><strong>Objetivo:</strong> Avaliar estruturas ósseas e linfonodos profundos.</p>
+                                <p><strong>Limitação:</strong> Menos sensível para partes moles comparado à USG.</p>
                             </div>
 
                             <div class="diagnostico-method">
-                                <h4>Tomografia Computadorizada (TC) e Ressonância Magnética (RM)</h4>
-                                <p><strong>Objetivo:</strong> Avaliação detalhada de complicações.</p>
+                                <h4>Tomografia (TC) e Ressonância (RM)</h4>
+                                <p><strong>Indicação:</strong> Avaliação de complicações (abscessos profundos, compressão traqueal).</p>
                                 <p><strong>Desvantagens:</strong> Alto custo e necessidade de anestesia geral.</p>
                             </div>
                         </div>
@@ -156,10 +207,10 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="tratamento">
             <h2>Tratamento</h2>
-            <p>O tratamento do garrotilho é dado conforme o estágio da enfermidade e a condição do animal.</p>
+            <p>O tratamento do garrotilho varia conforme o estágio da doença e deve ser sempre orientado por médico veterinário.</p>
             
             <table class="treatment-table">
                 <thead>
@@ -172,18 +223,59 @@
                 <tbody>
                     <tr>
                         <td>Estágio inicial (sem abscessos)</td>
-                        <td>Antibacterianos como a penicilina G ou trimetoprim em associação com sulfametaxol</td>
+                        <td>
+                            <ul>
+                                <li>Penicilina G (15.000 UI/kg a cada 12h)</li>
+                                <li>Trimetoprim + Sulfametoxazol</li>
+                                <li>Anti-inflamatórios não esteroidais</li>
+                            </ul>
+                        </td>
                         <td>Iniciar o tratamento precocemente pode prevenir a formação de abscessos</td>
                     </tr>
+
                     <tr>
                         <td>Com abscessos formados</td>
-                        <td>Aplicação de substâncias revulsivas como iodo para facilitar a maturação do abscesso</td>
+                        <td>
+                            <ul>
+                                <li>Aplicação de substâncias revulsivas (iodo)</li>
+                                <li>Compressas quentes para maturação</li>
+                                <li>Drenagem cirúrgica quando flutuante</li>
+                                <li>Evitar antibióticos que retardem maturação</li>
+                            </ul>
+                        </td>
                         <td>Após maturação, pode ser necessária a drenagem cirúrgica</td>
                     </tr>
+
                     <tr>
-                        <td>Quadro com complicações</td>
-                        <td>Tratamento suporte com fluidoterapia, antimicrobianos e medicamentos expectorantes em dosagens superiores</td>
+                        <td>Complicações (garrotilho bastardo)</td>
+                        <td>
+                            <ul>
+                                <li>Penicilina benzatina (90.000 UI IV a cada 48h por 21 dias)</li>
+                                <li>Fluidoterapia intensiva</li>
+                                <li>Tratamento suporte sintomático</li>
+                                <li>Hospitalização em casos graves</li>
+                            </ul>
+                        </td>
                         <td>Pode requerer hospitalização e cuidados intensivos</td>
+                    </tr>
+
+                    <tr>    
+                        <td>Anestesia no Tratamento</td>
+                        <td>
+                            <h4>Anestesia Local</h4>
+                            <ul>
+                                <li>Bloqueios nervosos para abscessos acessíveis</li>
+                                <li>Menor risco de complicações</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h4>Anestesia Geral</h4>
+                            <ul>
+                                <li>Inalatória (isofluorano) ou intravenosa</li>
+                                <li>Necessária para abscessos profundos ou grandes</li>
+                                <li>Monitoramento rigoroso de funções vitais</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -193,15 +285,17 @@
                 <p>É necessária a avaliação de um médico veterinário para que ocorra um tratamento de qualidade e adequado às condições do animal. O uso indiscriminado de antibióticos pode mascarar os sintomas e levar ao desenvolvimento de resistência bacteriana.</p>
             </div>
         </section>
-        
+
         <section id="transmissao">
-            <h2>Modo de Transmissão</h2>
+            <h2 class="section-title">Transmissão e Controle</h2>
+
+            <h3>Modo de Transmissão</h3>
             <p>A transmissão do garrotilho ocorre de maneira direta ou indireta:</p>
             
-            <h3>Transmissão Direta</h3>
+            <h5>Transmissão Direta</h5>
             <p>Consiste no contato entre equinos doentes, em fase de incubação, sintomáticos ou em recuperação clínica.</p>
             
-            <h3>Transmissão Indireta</h3>
+            <h5>Transmissão Indireta</h5>
             <p>Dá-se por meio de fômites — objetos contaminados como cabrestos, baldes, seringas, instrumentos de manejo — bem como pelo ambiente, incluindo pastagens, bebedouros e instalações contaminadas com secreções respiratórias infectadas.</p>
             
             <div class="highlight">
@@ -220,16 +314,31 @@
             
             <h3>Controle da Disseminação</h3>
             <p>A disseminação do garrotilho pode ser controlada mediante:</p>
-            <ul>
-                <li>Isolamento de animais suspeitos</li>
-                <li>Higienização sistemática das instalações</li>
-                <li>Restrição de movimentação de indivíduos doentes</li>
-                <li>Adoção de programas vacinais (ainda que com eficácia variável)</li>
-                <li>Uso de desinfetantes como iodóforos a 0,02% e clorexidina a 2%</li>
-            </ul>
+            <div class="control-measures">
+                <div class="measure-card">
+                    <i class="fas fa-ban"></i>
+                    <h4>Isolamento</h4>
+                    <p>Animais suspeitos devem ser isolados por 4-5 semanas</p>
+                </div>
+                <div class="measure-card">
+                    <i class="fas fa-broom"></i>
+                    <h4>Higienização</h4>
+                    <p>Desinfecção sistemática com iodóforos 0,02% ou clorexidina 2%</p>
+                </div>
+                <div class="measure-card">
+                    <i class="fas fa-syringe"></i>
+                    <h4>Vacinação</h4>
+                    <p>Programas vacinais (eficácia variável)</p>
+                </div>
+                <div class="measure-card">
+                    <i class="fas fa-horse-head"></i>
+                    <h4>Manejo</h4>
+                    <p>Evitar superlotação e estresse</p>
+                </div>
+            </div>
         </section>
         
-        <section id="medicamentos">
+         <section id="medicamentos">
             <h2>Medicamentos Utilizados</h2>
             <p>Alguns equinos com curso avançado da doença demandam tratamento com antimicrobianos e medicamentos adjuvantes.</p>
             
@@ -237,18 +346,30 @@
                 <div class="medication-name">Penfort PPU</div>
                 <div class="medication-use">Antibiótico injetável</div>
                 <p>Indicado no tratamento de infecções bacterianas causadas por agentes etiológicos sensíveis. Em equinos, é utilizado para abscessos e infecções do trato gastrointestinal e respiratório.</p>
+                <div class="medication-details">
+                    <span><i class="fas fa-syringe"></i> Via: Intramuscular</span>
+                    <span><i class="fas fa-clock"></i> Duração: 48h</span>
+                </div>                
             </div>
             
             <div class="medication-card">
                 <div class="medication-name">Desflan</div>
                 <div class="medication-use">Anti-inflamatório</div>
                 <p>Indicado para casos de dor, febre e/ou inflamações em equinos e bovinos. Auxilia no controle dos sintomas inflamatórios associados ao garrotilho.</p>
+                <div class="medication-details">
+                    <span><i class="fas fa-syringe"></i> Via: Intravenosa</span>
+                    <span><i class="fas fa-clock"></i> Duração: 24h</span>
+                </div>
             </div>
             
             <div class="medication-card">
                 <div class="medication-name">Finador</div>
                 <div class="medication-use">Analgésico e antipirético</div>
-                <p>Indicado para bovinos e equinos em todos os estados em que estes animais manifestam dor ou febre de origem variada: cólicas, feridas, infecções virais e bacterianas, dores musculares, lumbago dos cavalos, inflamações, obstruções ou corpos estranhos, principalmente no esôfago e estados reumáticos, envolvendo articulações.</p>
+                <p>Indicado para bovinos e equinos em todos os estados em que estes animais manifestam dor ou febre de origem variada: cólicas, feridas, infecções virais e bacterianas, dores musculares, lumbago dos cavalos, inflamações, obstruções ou corpos estranhos, principalmente no esôfago e estados reumáticos, envolvendo articulações.</p>        
+                <div class="medication-details">
+                    <span><i class="fas fa-syringe"></i> Via: Intramuscular</span>
+                    <span><i class="fas fa-clock"></i> Duração: 12-24h</span>
+                </div>
             </div>
             
             <div class="highlight">
@@ -256,6 +377,10 @@
                 <p>Todos os medicamentos devem ser utilizados sob prescrição e supervisão de médico veterinário, que determinará a dosagem adequada e a duração do tratamento conforme a condição do animal.</p>
             </div>
         </section>
+        
+
+
+
         
         <section id="imagens">
             <h2>Imagens Relacionadas</h2>
