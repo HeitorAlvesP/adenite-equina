@@ -732,6 +732,10 @@ footer {
     font-weight: 600;
 }
 
+.aluno {
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .contato-btn {
         padding: 12px 20px;
