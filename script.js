@@ -101,3 +101,27 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
         document.getElementById('mobile-menu').classList.remove('active');
     });
 });
+
+// Controle do modal da tabela
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('tableModal');
+    const btn = document.getElementById('openTableModal');
+    const span = document.querySelector('.close-modal');
+
+    // Abre o modal quando clicar no botão
+    btn.addEventListener('click', function() {
+        modal.style.display = 'block';
+    });
+
+    // Fecha o modal quando clicar no X
+    span.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Fecha o modal quando clicar fora dele
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

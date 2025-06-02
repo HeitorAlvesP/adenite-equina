@@ -214,73 +214,154 @@
             <h2>Tratamento</h2>
             <p>O tratamento do garrotilho varia conforme o estágio da doença e deve ser sempre orientado por médico veterinário.</p>
             
-            <table class="treatment-table">
-                <thead>
-                    <tr>
-                        <th>Estágio da Doença</th>
-                        <th>Tratamento Recomendado</th>
-                        <th>Observações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Estágio inicial (sem abscessos)</td>
-                        <td>
-                            <ul>
-                                <li>Penicilina G (15.000 UI/kg a cada 12h)</li>
-                                <li>Trimetoprim + Sulfametoxazol</li>
-                                <li>Anti-inflamatórios não esteroidais</li>
-                            </ul>
-                        </td>
-                        <td>Iniciar o tratamento precocemente pode prevenir a formação de abscessos</td>
-                    </tr>
+            <div class="treatment-table-desktop">
+                <table class="treatment-table">
+                    <thead>
+                        <tr>
+                            <th>Estágio da Doença</th>
+                            <th>Tratamento Recomendado</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Estágio inicial (sem abscessos)</td>
+                            <td>
+                                <ul>
+                                    <li>Penicilina G (15.000 UI/kg a cada 12h)</li>
+                                    <li>Trimetoprim + Sulfametoxazol</li>
+                                    <li>Anti-inflamatórios não esteroidais</li>
+                                </ul>
+                            </td>
+                            <td>Iniciar o tratamento precocemente pode prevenir a formação de abscessos</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Com abscessos formados</td>
+                            <td>
+                                <ul>
+                                    <li>Aplicação de substâncias revulsivas (iodo)</li>
+                                    <li>Compressas quentes para maturação</li>
+                                    <li>Drenagem cirúrgica quando flutuante</li>
+                                    <li>Evitar antibióticos que retardem maturação</li>
+                                </ul>
+                            </td>
+                            <td>Após maturação, pode ser necessária a drenagem cirúrgica</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Complicações (garrotilho bastardo)</td>
+                            <td>
+                                <ul>
+                                    <li>Penicilina benzatina (90.000 UI IV a cada 48h por 21 dias)</li>
+                                    <li>Fluidoterapia intensiva</li>
+                                    <li>Tratamento suporte sintomático</li>
+                                    <li>Hospitalização em casos graves</li>
+                                </ul>
+                            </td>
+                            <td>Pode requerer hospitalização e cuidados intensivos</td>
+                        </tr>
+                    
+                        <tr>    
+                            <td>Anestesia no Tratamento</td>
+                            <td>
+                                <h4>Anestesia Local</h4>
+                                <ul>
+                                    <li>Bloqueios nervosos para abscessos acessíveis</li>
+                                    <li>Menor risco de complicações</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <h4>Anestesia Geral</h4>
+                                <ul>
+                                    <li>Inalatória (isofluorano) ou intravenosa</li>
+                                    <li>Necessária para abscessos profundos ou grandes</li>
+                                    <li>Monitoramento rigoroso de funções vitais</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                    <tr>
-                        <td>Com abscessos formados</td>
-                        <td>
-                            <ul>
-                                <li>Aplicação de substâncias revulsivas (iodo)</li>
-                                <li>Compressas quentes para maturação</li>
-                                <li>Drenagem cirúrgica quando flutuante</li>
-                                <li>Evitar antibióticos que retardem maturação</li>
-                            </ul>
-                        </td>
-                        <td>Após maturação, pode ser necessária a drenagem cirúrgica</td>
-                    </tr>
+            <button class="btn-mobile-table" id="openTableModal">Abrir Tabela de Tratamento</button>
 
-                    <tr>
-                        <td>Complicações (garrotilho bastardo)</td>
-                        <td>
-                            <ul>
-                                <li>Penicilina benzatina (90.000 UI IV a cada 48h por 21 dias)</li>
-                                <li>Fluidoterapia intensiva</li>
-                                <li>Tratamento suporte sintomático</li>
-                                <li>Hospitalização em casos graves</li>
-                            </ul>
-                        </td>
-                        <td>Pode requerer hospitalização e cuidados intensivos</td>
-                    </tr>
-
-                    <tr>    
-                        <td>Anestesia no Tratamento</td>
-                        <td>
-                            <h4>Anestesia Local</h4>
-                            <ul>
-                                <li>Bloqueios nervosos para abscessos acessíveis</li>
-                                <li>Menor risco de complicações</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <h4>Anestesia Geral</h4>
-                            <ul>
-                                <li>Inalatória (isofluorano) ou intravenosa</li>
-                                <li>Necessária para abscessos profundos ou grandes</li>
-                                <li>Monitoramento rigoroso de funções vitais</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Modal para a tabela -->
+            <div id="tableModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Tabela de Tratamento</h3>
+                    <div class="modal-table-container">
+                        <table class="treatment-table">
+                            <thead>
+                                <tr>
+                                    <th>Estágio da Doença</th>
+                                    <th>Tratamento Recomendado</th>
+                                    <th>Observações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Estágio inicial (sem abscessos)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Penicilina G (15.000 UI/kg a cada 12h)</li>
+                                            <li>Trimetoprim + Sulfametoxazol</li>
+                                            <li>Anti-inflamatórios não esteroidais</li>
+                                        </ul>
+                                    </td>
+                                    <td>Iniciar o tratamento precocemente pode prevenir a formação de abscessos</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>Com abscessos formados</td>
+                                    <td>
+                                        <ul>
+                                            <li>Aplicação de substâncias revulsivas (iodo)</li>
+                                            <li>Compressas quentes para maturação</li>
+                                            <li>Drenagem cirúrgica quando flutuante</li>
+                                            <li>Evitar antibióticos que retardem maturação</li>
+                                        </ul>
+                                    </td>
+                                    <td>Após maturação, pode ser necessária a drenagem cirúrgica</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>Complicações (garrotilho bastardo)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Penicilina benzatina (90.000 UI IV a cada 48h por 21 dias)</li>
+                                            <li>Fluidoterapia intensiva</li>
+                                            <li>Tratamento suporte sintomático</li>
+                                            <li>Hospitalização em casos graves</li>
+                                        </ul>
+                                    </td>
+                                    <td>Pode requerer hospitalização e cuidados intensivos</td>
+                                </tr>
+                            
+                                <tr>    
+                                    <td>Anestesia no Tratamento</td>
+                                    <td>
+                                        <h4>Anestesia Local</h4>
+                                        <ul>
+                                            <li>Bloqueios nervosos para abscessos acessíveis</li>
+                                            <li>Menor risco de complicações</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <h4>Anestesia Geral</h4>
+                                        <ul>
+                                            <li>Inalatória (isofluorano) ou intravenosa</li>
+                                            <li>Necessária para abscessos profundos ou grandes</li>
+                                            <li>Monitoramento rigoroso de funções vitais</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
             
             <div class="highlight">
                 <h3>Importante</h3>
