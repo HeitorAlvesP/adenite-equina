@@ -506,7 +506,7 @@ nav a:hover {
 
 /* Conteúdo do modal */
 .modal-content {
-    background-color: #f5f5dc;
+    background-color: #ffffff;
     margin: 5% auto;
     padding: 20px;
     width: 90%; /* Mais espaço em mobile */
