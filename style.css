@@ -517,11 +517,11 @@ nav a:hover {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    color: #8b4513;
+    color: #000000;
 }
 
 .close-modal:hover {
-    color: #a0522d;
+    color: #c71414;
 }
 
 .modal-table-container {
@@ -552,7 +552,7 @@ nav a:hover {
     }
     
     .treatment-table {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     .treatment-table th, 
