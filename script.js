@@ -102,26 +102,51 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
     });
 });
 
+
+
 // Controle do modal da tabela
 document.addEventListener('DOMContentLoaded', function() {
+    // Verificação mais segura dos elementos
     const modal = document.getElementById('tableModal');
     const btn = document.getElementById('openTableModal');
-    const span = document.querySelector('.close-modal');
+    
+    // Verifica se os elementos principais existem
+    if (!modal) {
+        console.error('Modal tableModal não foi encontrado no DOM');
+        return;
+    }
+    
+    if (!btn) {
+        console.error('Botão openTableModal não foi encontrado no DOM');
+        return;
+    }
 
-    // Abre o modal quando clicar no botão
+    // Configuração inicial do modal
+    modal.style.display = 'none';
+    
+    // Evento para abrir modal
     btn.addEventListener('click', function() {
+        console.log('Abrindo modal...');
         modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     });
-
-    // Fecha o modal quando clicar no X
-    span.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    // Fecha o modal quando clicar fora dele
-    window.addEventListener('click', function(event) {
-        if (event.target == modal) {
+    
+    // Busca pelo botão de fechar somente se o modal existir
+    const closeBtn = modal.querySelector('.close-modal');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
             modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    } else {
+        console.warn('Botão de fechar não encontrado dentro do modal');
+    }
+    
+    // Fechar ao clicar fora do conteúdo
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
         }
     });
 });
