@@ -482,6 +482,9 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
+
+
+
 /* Modal */
 .modal {
     display: none;
