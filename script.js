@@ -20,15 +20,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 
-////modal contato
 function toggleContato() {
     const modal = document.getElementById("contatoModal");
     if (modal.style.display === "flex") {
         modal.style.display = "none";
-        document.body.style.overflow = "auto"; // Permite scroll novamente
+        document.body.style.overflow = "auto";
     } else {
         modal.style.display = "flex";
-        document.body.style.overflow = "hidden"; // Impede scroll quando modal aberto
+        document.body.style.overflow = "hidden";
     }
 }
 
@@ -39,7 +38,7 @@ window.onclick = function(event) {
     }
 }
 
-// Fechar modal com tecla ESC
+
 document.addEventListener('keydown', function(event) {
     const modal = document.getElementById("contatoModal");
     if (event.key === "Escape" && modal.style.display === "flex") {
@@ -48,13 +47,12 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-///////menu xbcon/////
 function toggleMenu() {
     const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("active");
 }
 
-// Fechar o menu ao clicar fora
+
 document.addEventListener("click", function(event) {
     const menu = document.getElementById("mobile-menu");
     const button = document.querySelector(".menu-btn");
@@ -64,7 +62,7 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// Fechar o menu ao clicar em um link
+
 document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('mobile-menu').classList.remove('active');
@@ -73,13 +71,11 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
 
 
 
-// Controle do modal da tabela
 document.addEventListener('DOMContentLoaded', function() {
-    // Verificação mais segura dos elementos
+
     const modal = document.getElementById('tableModal');
     const btn = document.getElementById('openTableModal');
-    
-    // Verifica se os elementos principais existem
+
     if (!modal) {
         console.error('Modal tableModal não foi encontrado no DOM');
         return;
@@ -90,17 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    // Configuração inicial do modal
     modal.style.display = 'none';
     
-    // Evento para abrir modal
     btn.addEventListener('click', function() {
         console.log('Abrindo modal...');
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
-    
-    // Busca pelo botão de fechar somente se o modal existir
+
     const closeBtn = modal.querySelector('.close-modal');
     if (closeBtn) {
         closeBtn.addEventListener('click', function() {
@@ -111,7 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('Botão de fechar não encontrado dentro do modal');
     }
     
-    // Fechar ao clicar fora do conteúdo
     modal.addEventListener('click', function(e) {
         if (e.target === modal) {
             modal.style.display = 'none';

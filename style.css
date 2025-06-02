@@ -473,7 +473,7 @@ nav a:hover {
     display: none;
     width: 100%;
     padding: 15px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -487,9 +487,6 @@ nav a:hover {
 .btn-mobile-table:hover {
     background-color: var(--secondary-color);
 }
-
-
-
 
 /* Modal */
 .modal {
@@ -566,12 +563,6 @@ nav a:hover {
         padding: 8px;
     }
 }
-
-
-
-
-
-
 
 .medication-card {
     background-color: white;
@@ -703,9 +694,6 @@ footer {
 .accordion-item.active .accordion-icon {
     transform: rotate(180deg);
 }
-
-
-
 
 .contato-btn {
     position: fixed;
