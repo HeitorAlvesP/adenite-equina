@@ -1,3 +1,6 @@
+console.log('Developer: Heitor Avles Pinto')
+console.log('www.linkedin.com/in/heitor-alves-pinto-a0004928b/')
+
 document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
         const item = header.parentElement;
