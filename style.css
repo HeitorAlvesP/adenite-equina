@@ -379,7 +379,6 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .diagnostico-grid {
         grid-template-columns: 1fr;
@@ -615,7 +614,7 @@ nav a:hover {
     color: #666;
     margin-bottom: 0.5rem;
 }
-
+/* 
 .carousel {
     position: relative;
     max-width: 800px;
@@ -671,7 +670,7 @@ nav a:hover {
 .carousel-control.next {
     right: 0;
     border-radius: 8px 0 0 8px;
-}
+} */
 
 footer {
     background-color: var(--primary-color);

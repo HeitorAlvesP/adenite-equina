@@ -22,7 +22,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-
 function toggleContato() {
     const modal = document.getElementById("contatoModal");
     if (modal.style.display === "flex") {
@@ -41,7 +40,6 @@ window.onclick = function(event) {
     }
 }
 
-
 document.addEventListener('keydown', function(event) {
     const modal = document.getElementById("contatoModal");
     if (event.key === "Escape" && modal.style.display === "flex") {
@@ -49,12 +47,10 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-
 function toggleMenu() {
     const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("active");
 }
-
 
 document.addEventListener("click", function(event) {
     const menu = document.getElementById("mobile-menu");
@@ -65,14 +61,11 @@ document.addEventListener("click", function(event) {
     }
 });
 
-
 document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('mobile-menu').classList.remove('active');
     });
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -114,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
 
 document.getElementById('copyLinkBtn').addEventListener('click', function() {
 
