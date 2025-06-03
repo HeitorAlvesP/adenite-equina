@@ -526,6 +526,42 @@ nav a:hover {
     }
 }
 
+.qrcode-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy-link-btn {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.copy-link-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+.qrcode {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .qrcode {
+        width: 150px;
+    }
+}
+
 
 @media (min-width: 769px) {
     .btn-mobile-table {

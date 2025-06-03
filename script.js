@@ -115,3 +115,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+document.getElementById('copyLinkBtn').addEventListener('click', function() {
+
+    const url = 'https://heitoralvesp.github.io/adenite-equina/';
+    
+    navigator.clipboard.writeText(url)
+        .then(() => {
+            const btn = document.getElementById('copyLinkBtn');
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Link copiado!';
+            
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-link"></i> Copiar Link';
+            }, 400);
+        })
+        .catch(err => {
+            console.error('Falha ao copiar: ', err);
+            alert('Não foi possível copiar o link. Tente manualmente: ' + url);
+        });
+});
