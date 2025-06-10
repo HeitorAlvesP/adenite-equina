@@ -17,9 +17,9 @@
 
         <ul class="desktop-menu">
             <li><a href="#sobre">Sobre a Doença</a></li>
-            <li><a href="#diagnostico">Diagnóstico</a></li>
-            <li><a href="#tratamento">Tratamento</a></li>
             <li><a href="#transmissao">Transmissão</a></li>
+            <li><a href="#diagnostico">Diagnóstico por Imagem</a></li>
+            <li><a href="#tratamento">Tratamento</a></li>
             <li><a href="#medicamentos">Medicamentos</a></li>
             <li><a href="#anestesia">Anestesia</a></li>
             <li><a href="#prevencao">Prevenção</a></li>
@@ -29,9 +29,9 @@
         <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
         <ul class="mobile-menu" id="mobile-menu">
             <li><a href="#sobre">Sobre a Doença</a></li>
+            <li><a href="#transmissao">Transmissão</a></li>
             <li><a href="#diagnostico">Diagnóstico</a></li>
             <li><a href="#tratamento">Tratamento</a></li>
-            <li><a href="#transmissao">Transmissão</a></li>
             <li><a href="#medicamentos">Medicamentos</a></li>
             <li><a href="#anestesia">Anestesia</a></li>
             <li><a href="#prevencao">Prevenção</a></li>
@@ -88,13 +88,6 @@
                             <li><i class="fas fa-utensils"></i> Disfagia (dificuldade para engolir)</li>
                         </ul>
 
-                        <div class="alert-box">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <p>Em alguns animais, a ruptura dos abscessos pode levar à eliminação de grande volume de secreção purulenta, o que melhora os sintomas mas aumenta o risco de contaminação ambiental.</p>
-                        </div>
-
-                        <p>A infecção caracteriza-se, principalmente, pela formação de abscessos nos linfonodos submandibulares e retrofaríngeos, que podem comprimir a faringe e causar dificuldade respiratória. A morbidade da enfermidade é elevada, com impacto considerável sobre o desempenho e crescimento dos animais, sobretudo dos mais jovens, sendo a letalidade geralmente baixa.</p>
-
                         <h3>Fatores Predisponentes</h3>
                         <div class="factors-grid">
                             <div class="factor-card">
@@ -116,6 +109,15 @@
                             </div>
                         </div>
 
+                        <p></p>
+
+                        <div class="alert-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p>Em alguns animais, a ruptura dos abscessos pode levar à eliminação de grande volume de secreção purulenta, o que melhora os sintomas mas aumenta o risco de contaminação ambiental.</p>
+                        </div>
+
+                        <p>A infecção caracteriza-se, principalmente, pela formação de abscessos nos linfonodos submandibulares e retrofaríngeos, que podem comprimir a faringe e causar dificuldade respiratória. A morbidade da enfermidade é elevada, com impacto considerável sobre o desempenho e crescimento dos animais, sobretudo dos mais jovens, sendo a letalidade geralmente baixa.</p>
+
                         <div class="highlight">
                             <h3>Zoonose</h3>
                             <p>Ainda que seja uma zoonose pouco comum, há registros de transmissão interespecífica envolvendo outras subespécies do gênero <em>Streptococcus</em>. Casos de meningite humana por <em>S. equi</em> subsp. <em>zooepidemicus</em> foram relatados em trabalhadores de empresas de manejo equino.</p>
@@ -125,9 +127,58 @@
             </div>
         </section>
 
+        <section id="transmissao">
+            <h2 class="section-title">Transmissão e Controle</h2>
+
+            <h3>Modo de Transmissão</h3>
+            <p>A transmissão do garrotilho ocorre de maneira direta ou indireta:</p>
+            
+            <h5>Transmissão Direta</h5>
+            <p>Consiste no contato entre equinos doentes, em fase de incubação, sintomáticos ou em recuperação clínica.</p>
+            
+            <h5>Transmissão Indireta</h5>
+            <p>Dá-se por meio de fômites — objetos contaminados como cabrestos, baldes, seringas, instrumentos de manejo — bem como pelo ambiente, incluindo pastagens, bebedouros e instalações contaminadas com secreções respiratórias infectadas.</p>
+            
+            <div class="highlight">
+                <h3>Portadores Assintomáticos</h3>
+                <p>Estima-se que até 20% dos equinos convalescentes ou aparentemente recuperados mantenham a bactéria viável nas secreções nasais, tornando-se portadores assintomáticos e perpetuando o ciclo da doença no rebanho. Tais portadores representam um desafio epidemiológico relevante, pois mesmo na ausência de sinais clínicos podem eliminar o agente por vários meses.</p>
+            </div>
+                    
+            <h3>Controle da Disseminação</h3>
+            <p>A disseminação do garrotilho pode ser controlada mediante:</p>
+            <div class="control-measures">
+                <div class="measure-card">
+                    <h4>Isolamento <i class="fas fa-ban"></i> </h4>
+                    <p>Animais suspeitos devem ser isolados por 4-5 semanas</p>
+                </div>
+                <div class="measure-card">
+                    <h4>Higienização <i class="fas fa-broom"></i></h4>
+                    <p>Desinfecção sistemática com iodóforos 0,02% ou clorexidina 2%</p>
+                </div>
+                <div class="measure-card">
+                    <h4>Vacinação <i class="fas fa-syringe"></i></h4>
+                    <p>Programas vacinais (eficácia variável)</p>
+                </div>
+                <div class="measure-card">
+                    <h4>Manejo <i class="fas fa-horse-head"></i></h4>
+                    <p>Evitar superlotação e estresse</p>
+                </div>
+            </div>
+
+            <h3>Fatores Predisponentes</h3>
+            <ul>
+                <li>Estresse</li>
+                <li>Transporte prolongado</li>
+                <li>Superlotação</li>
+                <li>Infecções virais concomitantes</li>
+                <li>Parasitoses</li>
+            </ul>
+
+        </section>
+
         <section id="diagnostico">
             <div class="container">
-                <h2 class="section-title">Diagnóstico</h2>
+                <h2 class="section-title">Diagnóstico por Imagem</h2>
                 <p class="section-intro">O diagnóstico do garrotilho em equinos pode ser realizado através de diversos métodos laboratoriais e de imagem.</p>
 
                 <div class="diagnostico-grid">
@@ -363,56 +414,8 @@
                 <p>É necessária a avaliação de um médico veterinário para que ocorra um tratamento de qualidade e adequado às condições do animal. O uso indiscriminado de antibióticos pode mascarar os sintomas e levar ao desenvolvimento de resistência bacteriana.</p>
             </div>
         </section>
-
-        <section id="transmissao">
-            <h2 class="section-title">Transmissão e Controle</h2>
-
-            <h3>Modo de Transmissão</h3>
-            <p>A transmissão do garrotilho ocorre de maneira direta ou indireta:</p>
-            
-            <h5>Transmissão Direta</h5>
-            <p>Consiste no contato entre equinos doentes, em fase de incubação, sintomáticos ou em recuperação clínica.</p>
-            
-            <h5>Transmissão Indireta</h5>
-            <p>Dá-se por meio de fômites — objetos contaminados como cabrestos, baldes, seringas, instrumentos de manejo — bem como pelo ambiente, incluindo pastagens, bebedouros e instalações contaminadas com secreções respiratórias infectadas.</p>
-            
-            <div class="highlight">
-                <h3>Portadores Assintomáticos</h3>
-                <p>Estima-se que até 20% dos equinos convalescentes ou aparentemente recuperados mantenham a bactéria viável nas secreções nasais, tornando-se portadores assintomáticos e perpetuando o ciclo da doença no rebanho. Tais portadores representam um desafio epidemiológico relevante, pois mesmo na ausência de sinais clínicos podem eliminar o agente por vários meses.</p>
-            </div>
-            
-            <h3>Fatores Predisponentes</h3>
-            <ul>
-                <li>Estresse</li>
-                <li>Transporte prolongado</li>
-                <li>Superlotação</li>
-                <li>Infecções virais concomitantes</li>
-                <li>Parasitoses</li>
-            </ul>
-            
-            <h3>Controle da Disseminação</h3>
-            <p>A disseminação do garrotilho pode ser controlada mediante:</p>
-            <div class="control-measures">
-                <div class="measure-card">
-                    <h4>Isolamento <i class="fas fa-ban"></i> </h4>
-                    <p>Animais suspeitos devem ser isolados por 4-5 semanas</p>
-                </div>
-                <div class="measure-card">
-                    <h4>Higienização <i class="fas fa-broom"></i></h4>
-                    <p>Desinfecção sistemática com iodóforos 0,02% ou clorexidina 2%</p>
-                </div>
-                <div class="measure-card">
-                    <h4>Vacinação <i class="fas fa-syringe"></i></h4>
-                    <p>Programas vacinais (eficácia variável)</p>
-                </div>
-                <div class="measure-card">
-                    <h4>Manejo <i class="fas fa-horse-head"></i></h4>
-                    <p>Evitar superlotação e estresse</p>
-                </div>
-            </div>
-        </section>
         
-         <section id="medicamentos">
+        <section id="medicamentos">
             <h2>Medicamentos Utilizados</h2>
             <p>Alguns equinos com curso avançado da doença demandam tratamento com antimicrobianos e medicamentos adjuvantes.</p>
             
